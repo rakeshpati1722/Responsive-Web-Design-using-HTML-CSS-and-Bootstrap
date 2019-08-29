@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+html, body {
+    /* font-family: Verdana,sans-serif; */
+    font-size: 15px;
+    line-height: 0.5;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #11111121;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 25px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #da7171;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #1111112b;
+  color: #da7171;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 10px;
+}
+.align-padding{
+    padding-top:161px;
+    color:15px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 13px;}
+}
+h5{
+    color:white;
+    /* padding-right:34px; */
+}
+.padding-align{
+    padding-top:0px;
+}
+body{
+    background: black;
+}
+.btc-align{
+    margin-left:453px;
+}
+span{
+    
+}
+.align_BTC{
+	padding-bottom: 21px;
+}
+
+/*form style starts*/
+ input {
+  border: 0!important;
+  
+  outline: 0!important;
+  background: transparent;
+  border-bottom: 1px solid #e3dbdb!important;
+  border-radius:0!important;
+  width:100%;
+}
+.form-control{
+	background-color:none!important;
+}
+
+
+.react-div{
+	width: 10px;
+	height: 5px;
+	background: #ffff;
+
+}
+.button_example{
+background-image: linear-gradient(to right, orange ,red);
+
+}
+.text-attend{
+	margin-top: 12px;
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+sup{
+	color:#e3dbdb;
+	font-size:12px;
+	
+}
+.text-attent{
+	font-size:11px;
+	color:#e3dbdb;
+}
+button.button_example{
+	border: 0;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 12px;
+    padding: 20px;
+	color:#fff;
+	font-weight:600;
+
+}
+.content-text{
+	text-align:center;
+	font-size:11px;
+	color:#e3dbdb;
+
+}
+.form-label-group{
+	margin-bottom: 15px;
+	padding-bottom: 13px;
+
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #e3dbdb;
+  font-size:12px;
+  margin-bottom:10px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #e3dbdb;
+  font-size:12px;
+   margin-bottom:10px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #e3dbdb;
+  font-size:12px;
+   margin-bottom:10px;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color:#e3dbdb;
+  font-size:12px;
+   margin-bottom:10px;
+}
+.form-div {
+    background: #785757;
+    border-radius: 13px;
+	text-align:center;
+	display:block;
+	margin:0 auto;
+	width:40%;
+}
+.new-form{
+	padding: 71px 9px;
+  padding-bottom: 0px;
+
+}
+#page-content-wrapper{	
+	margin-top:12%;
+
+}
+.sec-div{
+	margin-bottom:10px;
+}
+
+/*form style ends*/
+.B_V_align{
+	color:white;
+	padding-left:46px; 
+  padding-right:45px;
+}
+.feed-btn{
+	padding-top: 0px;
+}
+
+
+
+</style>
+</head>
+<body>
+    <div id="mySidebar" class="sidebar" style="width: 176px;">
+        <div class="align-padding">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#">Animal</a>
+            <a href="#">About Us</a>
+            <a href="#">How it works</a>
+            <a href="#">contact us</a>
+        </div>    
+    </div>
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰</button>  
+    </div>
+    <div class="container">      
+            <div class="row">
+                <div class="col">
+                	<div class="align_BTC">
+	                    <center>
+	                            <span class="B_V_align">
+	                                BTC 
+	                            </span>
+	                            <span class="B_V_align">
+	                                =
+	                            </span>
+	                            <span class="B_V_align">
+	                                VNC
+	                            </span>
+	                    </center>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+            	<div class="col">
+            		<center>
+            			<div class="form-div">
+							<form class="form-signin">
+								<div class="new-form">
+								  <div class="form-label-group">
+									<input type="email" id="inputEmail" placeholder="Address de refundo" required autofocus>
+									
+								  </div>
+
+								  <div class="form-label-group">
+									<input type="password" id="inputPassword"  placeholder="Nombre" required>
+									
+								  </div>
+								   <div class="form-label-group">
+									<input type="email" id="inputEmail" placeholder="Cedula" required autofocus>
+									
+								  </div>
+								   <div class="form-label-group">
+									<input type="email" id="inputEmail" placeholder="Email para notificagoes" required autofocus>
+									
+								  </div>
+								  <div class="text-attend">
+									<p><sup>...</sup><span class="text-attent">ATTENTION</span><sup>...</sup></p>
+								  </div>
+								  
+								  <div class="smalltext">
+									<p class="content-text">Please check your bank details We cannot undo payments made to an</p><br>
+									<p class="content-text">incorrect account</p>															 
+								  </div>
+								 </div>
+								  <div style="padding-top: 10px;">
+									<button class="button_example" style="cursor:pointer;">Feed</button>
+								  </div>
+							</form>
+						
+				</div>
+				  
+            		</center>
+            	</div>	
+            </div>
+        </div>
+    </div>  
+
+</body>
+
+<script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+</script>
+</html>
